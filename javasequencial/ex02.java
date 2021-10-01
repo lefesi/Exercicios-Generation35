@@ -1,4 +1,4 @@
-package br.com.generation.gen25;
+package br.com.generation.javasequencial;
  
 import java.util.Scanner;
 
