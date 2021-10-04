@@ -1,0 +1,154 @@
+funcao inicio()
+	{
+		/*1) João, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. 
+		Toda vez que ele traz um peso de tomate maior que o estabelecido pelo regulamento do estado de São Paulo (50 quilos) 
+		deve pagar um multa de R$ 4,00 por quilo excedente. João precisa que você faça um sistema que 
+		leia a variável P (peso de tomates) e verifique se há excesso. 
+		Se houver, gravar na variável E (Excesso) e na variável M o valor da multa que João deverá pagar. 
+		Caso contrário mostrar tais variáveis com o conteúdo ZERO.*/
+
+		//qual o tipo de variavel?
+		inteiro P, E, M
+
+		escreva(" qual o peso do tomate?: ")
+			leia(P)
+         
+		se( P<=50){
+		escreva( "\n peso excedente 0...")
+		}
+		
+		
+		E=P-50
+		se (P>50){
+		}
+		escreva("\npesso em excesso: "+ E)
+
+	     M= E*4
+		se( E>=0){
+		escreva("\nvalor da multa: "+ M )
+		}
+	
+		 
+	}
+}
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro codigo
+		real horastrab, horasextras= 0.0, salarioextra= 0.0, salario= 0.0
+
+		escreva("codigo: ")
+		leia(codigo)
+
+		escreva("\nhoras trabalhadas: ")
+		leia(horastrab)
+
+		se(horastrab>50){
+			horasextras= horastrab-50
+		}
+
+		salarioextra= horasextras*20 
+		salario= (horastrab-horasextras) *10 
+
+		escreva("\ntotal de horas trabalhadas: ", horastrab)
+		escreva("\ntotal de horas extras: ", horasextras)
+		escreva("\nsalario extras: ", salarioextra)
+		escreva("\nsalrio base: ", salario)
+		escreva("\nsalario: R$" ,salario)
+
+	
+
+		
+	}
+}
+
+
+programa
+{
+	inclua biblioteca Matematica-->mat 
+	
+	funcao inicio()
+	{
+		
+     /*3) Desenvolva um sistema em que:
+     Leia 4 (quatro) números;
+     Calcule o quadrado de cada um;
+     Se o valor resultante do quadrado do terceiro for >= 1000, imprima-o e finalize;
+     Caso contrário, imprima os valores lidos e seus respectivos quadrados.*/
+
+     real a, b, c, d, potenciaA,  potenciaB, potenciaC, potenciaD 
+
+     escreva(" escreva A : ")
+     leia(a)
+
+      escreva(" escreva B : ")
+     leia(b)
+
+      escreva(" escreva C : ")
+     leia(c)
+
+      escreva(" escreva D : ")
+     leia(d)
+
+     potenciaA=mat.potencia(a, 2)
+      potenciaB=mat.potencia(b, 2)
+       potenciaC=mat.potencia(c, 2)
+        potenciaD=mat.potencia(d, 2)
+
+        se( potenciaC>= 1000){
+        }
+        escreva(" potencia de C:", potenciaC)
+        
+        
+         se( potenciaC< 1000){	
+         }
+         escreva(  "\npotencia de A:" , potenciaA , "\npotencia de B: ", potenciaB , "\npotencia de C: ", potenciaC,
+         "\npotencia de D: ", potenciaD)
+
+      
+     
+
+
+	}
+}
+
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+	/*4) Faça um sistema que leia um número inteiro e mostre uma mensagem indicando
+	se este número é par ou ímpar, e se é positivo ou negativo.
+	{*/
+
+		inteiro numero
+		real resto
+		
+		escreva("Um número inteiro: ")
+		leia(numero)
+
+		resto = numero % 2
+
+		se (resto == 0) {
+			escreva ("\nO número " +numero+ " é par.\n")
+		                }
+		senao {
+			escreva("\nO número " +numero+ " é ímpar.\n")
+		      }
+
+		se (numero > 0) {
+			escreva ("\nO número " +numero+ " é positivo.\n")
+		           }
+		senao {
+			escreva("\nO número " +numero+ " é negativo.\n\n")
+		      }
+				
+	}
+}
